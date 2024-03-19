@@ -1,5 +1,29 @@
 .footer {
 	padding-top: 96px;
+
+	&-navbar{
+		display: flex;
+		justify-content: space-between;
+
+		&__1{
+			padding-right: 136px;
+
+			a{
+				color: rgba(255, 255, 255, 0.8);
+				font-family: var(--font-family);
+				font-size: 16rem;
+				font-weight: 400;
+
+				.logo{
+					font-size: 24rem;
+					font-weight: 500;
+					color: var(--c-text-white);
+					font-family: var(--second-family);
+				}
+			}
+		}
+	}
+
 	&-policy {
 		padding-top: 36rem;
 		padding-bottom: 36rem;

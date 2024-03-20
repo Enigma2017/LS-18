@@ -1,0 +1,106 @@
+.service{
+    padding: 21px 0 120px;
+
+    @include mobile{
+        padding: 40px 0 70px;
+    }
+
+    &-title{
+        text-align: center;
+        font-size: 42rem;
+        font-weight: 700;
+        color: var(--c-text-white);
+        padding-bottom: 40px;
+
+        &__text{
+            max-width: 590px;
+            font-weight: 400;
+            font-size: 16rem;
+            line-height: 26rem;
+            text-align: center;
+            margin: auto;
+            padding-bottom: 40px;
+        }
+    }
+
+    &-content{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 40px;
+
+        @include desktop-small{
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        &__card{
+            max-width: 370px;
+            height: 336px;
+            padding: 37px 23px 30px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 34px;
+            -webkit-border-radius: 34px;
+            -moz-border-radius: 34px;
+            -ms-border-radius: 34px;
+            -o-border-radius: 34px;
+            background: linear-gradient(97.12deg, rgba(255, 255, 255, 0.08) -3.52%, rgba(255, 255, 255, 0.07) 100.35%);
+
+            @include mobile{
+                max-width: 280px;
+                height: auto;
+            }
+
+            &:hover{
+                background: linear-gradient(97.12deg, rgba(255, 255, 255, 0.3) -3.52%, rgba(255, 255, 255, 0.2) 100.35%);
+                transition: 1s all ease-in;
+                -webkit-transition: 1s all ease-in;
+                -moz-transition: 1s all ease-in;
+                -ms-transition: 1s all ease-in;
+                -o-transition: 1s all ease-in;
+}
+        
+            img{
+                margin-left: 40%;
+
+                @include mobile{
+                    margin-left: 35%;
+                }
+            }
+
+            h3{
+                text-align: center;
+                padding: 19px 0 17px;
+                font-size: 24rem;
+                font-weight: 500;
+            }
+
+            p{
+                font-size: 16rem;
+                font-weight: 400;
+                line-height: 26rem;
+                padding-bottom: 24px;
+            }
+
+            a{
+                display: block;
+                font-size: 18rem;
+                color: var(--c-text-white);
+                text-align: center;
+                margin: auto;
+
+                svg{
+                    margin-left: 5px;
+                }
+
+                &:hover{
+                    color: rgba(255, 255, 255, 0.8);
+                }
+            }
+
+        }       
+    }
+}

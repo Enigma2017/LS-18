@@ -2,15 +2,16 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 20rem;
-	border-bottom: 1rem solid var(--c-border);
+	padding: 40rem 0;
 
 	&__ul {
 		display: flex;
 		align-items: center;
-		gap: 20rem;
+		justify-content: space-between;
+		column-gap: 60px;
 
 		@include tablet {
+			z-index: 1;
 			position: fixed;
 			width: 70%;
 			height: 100%;
@@ -22,13 +23,12 @@
 			justify-content: center;
 			transform: translateX(-120%);
 			transition: var(--transition);
+			row-gap: 30px;
 		}
 
 		&._active {
 			transform: translateX(0);
 		}
-
-
 
 		.icon-close {
 			position: absolute;
@@ -39,9 +39,21 @@
 	}
 
 	&__a {
+		color: var(--c-text-white);
+		font-size: 14px;
+		font-weight: 500;
 		@include tablet {
 			color: var(--c-text-white);
 		}
+	}
+
+	&-btn{
+		background: linear-gradient(91deg, #2563eb 0%, #d946ef 100%);
+			border-radius: 4rem;
+			font-weight: 500;
+			font-size: 14rem;
+			padding: 12rem 28rem;
+			color: var(--c-text-white);
 	}
 }
 
@@ -54,5 +66,7 @@
 
 	@include tablet {
 		display: inline-block;
+		padding-right: 10px;
+		
 	}
 }

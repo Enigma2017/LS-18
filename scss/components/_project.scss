@@ -12,6 +12,7 @@
 
 		@include tablet {
 			flex-direction: column;
+			justify-content: center;
 		}
 
 		&:nth-child(even) {

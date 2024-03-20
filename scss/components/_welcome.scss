@@ -25,6 +25,8 @@
 		@include tablet {
 			font-size: 32rem;
 			margin-bottom: 15rem;
+			display: flex;
+			justify-content: center;
 		}
 	}
 
@@ -36,6 +38,12 @@
 		text-shadow: 0 4rem 4rem rgba(0, 0, 0, 0.07);
 		opacity: 0.8;
 		margin-bottom: 21rem;
+
+		@include tablet {
+			display: flex;
+			justify-content: center;
+			
+		}
 	}
 
 	&__nav {
@@ -44,7 +52,7 @@
 		gap: 29rem;
 
 		@include tablet {
-			justify-content: space-between;
+			justify-content: center;
 			flex-wrap: wrap;
 		}
 	}

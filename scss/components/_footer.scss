@@ -1,25 +1,89 @@
 .footer {
 	padding-top: 96px;
+	@include tablet-small{
+		padding-top: 26px;
+	}
+
+	&-logo{
+		margin-bottom: 15px;
+	}
 
 	&-navbar{
 		display: flex;
 		justify-content: space-between;
+		padding-bottom: 32px;
+
+		@include tablet-small{
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 40px;
+		}
 
 		&__1{
 			padding-right: 136px;
+			font-size: 16rem;
+			@include desktop-small{
+				padding-right: 85px;
+			}
+			@include tablet{
+				padding-right: 0;
+			}
+
+			p{
+				padding: 10px 0;
+			}
 
 			a{
-				color: rgba(255, 255, 255, 0.8);
+				/*color: rgba(255, 255, 255, 0.8);*/
 				font-family: var(--font-family);
-				font-size: 16rem;
 				font-weight: 400;
 
-				.logo{
-					font-size: 24rem;
-					font-weight: 500;
-					color: var(--c-text-white);
-					font-family: var(--second-family);
+				span{
+					color: rgba(255, 255, 255, 0.8);
+					padding-left: 7px;
 				}
+			}
+		}
+
+		&__icons{
+			display: flex;
+			justify-content: space-between;
+			gap: 15px;
+			margin-top: 15px;
+
+			li{
+				position: relative;
+				width: 32px;
+				height: 32px;
+				border: 1px solid rgba(255, 255, 255, 0.8);
+				border-radius: 50%;
+				-webkit-border-radius: 50%;
+				-moz-border-radius: 50%;
+				-ms-border-radius: 50%;
+				-o-border-radius: 50%;
+
+				img{
+					position: absolute;
+				}
+			}
+		}
+	}
+
+	&-service{
+
+		li:first-child{
+			font-weight: 500;
+			font-size: 18rem;
+		}
+
+		li{
+			padding-bottom: 20px;
+			font-family: var(--font-family);
+
+			a{
+				color: var(--c-text-white);
+				font-size: 18rem;
+				font-weight: 400;
 			}
 		}
 	}
@@ -68,5 +132,16 @@
 				}
 			}
 		}
+	}
+}
+
+.logo{
+	font-size: 20rem;
+	font-weight: 600;
+	color: var(--c-text-white);
+	font-family: var(--second-family);
+	
+	img{
+		margin: -4px 7px 0 0;
 	}
 }

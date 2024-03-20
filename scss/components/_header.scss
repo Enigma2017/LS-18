@@ -42,6 +42,16 @@
 		color: var(--c-text-white);
 		font-size: 14px;
 		font-weight: 500;
+
+		&:hover{
+			color: #d674c9;
+			transition: 1s all ease-in-out;
+			-webkit-transition: 1s all ease-in-out;
+			-moz-transition: 1s all ease-in-out;
+			-ms-transition: 1s all ease-in-out;
+			-o-transition: 1s all ease-in-out;
+}
+
 		@include tablet {
 			color: var(--c-text-white);
 		}
@@ -54,6 +64,15 @@
 			font-size: 14rem;
 			padding: 12rem 28rem;
 			color: var(--c-text-white);
+
+			&:hover{
+				background: #d674c9;
+				transition: 1s all ease-in-out;
+				-webkit-transition: 1s all ease-in-out;
+				-moz-transition: 1s all ease-in-out;
+				-ms-transition: 1s all ease-in-out;
+				-o-transition: 1s all ease-in-out;
+			}
 	}
 }
 

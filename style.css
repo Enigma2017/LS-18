@@ -513,6 +513,14 @@ body {
   font-size: 14px;
   font-weight: 500;
 }
+.header__a:hover {
+  color: #d674c9;
+  transition: 1s all ease-in-out;
+  -webkit-transition: 1s all ease-in-out;
+  -moz-transition: 1s all ease-in-out;
+  -ms-transition: 1s all ease-in-out;
+  -o-transition: 1s all ease-in-out;
+}
 @media (max-width: 992px) {
   .header__a {
     color: var(--c-text-white);
@@ -525,6 +533,14 @@ body {
   font-size: 14rem;
   padding: 12rem 28rem;
   color: var(--c-text-white);
+}
+.header-btn:hover {
+  background: #d674c9;
+  transition: 1s all ease-in-out;
+  -webkit-transition: 1s all ease-in-out;
+  -moz-transition: 1s all ease-in-out;
+  -ms-transition: 1s all ease-in-out;
+  -o-transition: 1s all ease-in-out;
 }
 
 .icon-menu,
